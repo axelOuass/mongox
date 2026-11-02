@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "_about": "A .vps profile holds no secrets. It says where to find them. Copy this file to ~/.config/mongox/ and point the two paths at your own files.",
+  "host": {"env": "~/path/to/credentials.env", "key": "IP_ADDRESS"},
+  "ssh": {"user": "root", "port": 22},
+  "mongo": {
+    "remote": "127.0.0.1:27017",
+    "local_port": 27018,
+    "env": "/root/mongodb/credentials.env",
+    "user_key": "MONGO_ADMIN_USER",
+    "password_key": "MONGO_ADMIN_PASSWORD",
+    "auth_db": "admin"
+  }
+}
